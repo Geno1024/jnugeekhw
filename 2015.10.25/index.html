@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>锑度一下，你就知道</title>
+	<style type="text/css">
+		div#container	{height: 100%; width: 98%; }
+		div#header		{text-align: right; height: 10%; }
+		div#content		{text-align: center; height: 80%; margin-top: 10%; }
+		div#footer		{text-align: center; height: 100px; bottom: 44px; width: 100%; position: absolute;}
+		.c-icon-icrlogo	{width:14px;height:17px;display:inline-block;overflow:hidden;background:url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_45de3f02.png) no-repeat;background-position:-600px -96px;position:relative;top:3px}
+		span#border_kw	{border: 1px solid #b6b6b6; display: inline-block; width: 539px; border-color: #b8b8b8 transparent #ccc #b8b8b8; position: relative;}
+		input#kw		{width: 537px; height: 22px; border: #b6b6b6; }
+		input#submit	{width: 100px; height: 36px; background: #3385ff; color: white; border-bottom: 1px solid #2d78f4;}
+		button#submit	{width: 100px; height: 36px; background: #3385ff; color: white; border-bottom: 1px solid #2d78f4;}
+		a.head			{color: black; margin-left: 20px; color: #333; font-weight: bold; font-size: 13px; font-family: arial;}
+		#footer			{font: 12px arial; }
+		.foot			{color: #666; }
+	</style>
+	
+</head>
+<body>
+	<script>
+		function onc()
+		{
+			//这个跳转从来就没有成功过
+			window.location.href="https://www.baidu.com/s?wd=" + document.getElementById("kw").innerHTML;
+		}
+		function sethp()
+		{
+			//哪个浏览器？
+			this.style.behavior='url(#default#homepage)';
+			this.setHomePage("https://www.baidu.com");
+		}
+	</script>
+	<!--人生第三次尝试 div 排版-->
+	<div id="container">
+		<div id="header">
+			<a class="head" href="http://www.nuomi.com/?cid=002540">糯米</a>
+			<a class="head" href="http://news.baidu.com">新闻</a>
+			<a class="head" href="http://www.hao123.com">hao123</a>
+			<a class="head" href="http://map.baidu.com">地图</a>
+			<a class="head" href="http://v.baidu.com">视频</a>
+			<a class="head" href="http://tieba.baidu.com">贴吧</a>
+			<a class="head" href="https://passport.baidu.com/v2/?login&amp;tpl=mn&amp;u=http%3A%2F%2Fwww.baidu.com%2F">登录</a>
+			<a class="head" href="http://www.baidu.com/gaoji/preferences.html">设置</a>
+			<a href="http://www.baidu.com/more/">更多产品<!--这个有个侧边栏特技，无视--></a>
+		</div>
+		<div id="content">
+			<img src="https://www.baidu.com/img/bd_logo1.png" width="270" height="129"/><br/>
+			<!--<textarea><!--输入框的清除？无视</textarea><button/>-->
+			<!--最终还是用回了表单-->
+			<span id="border_kw"><input type="text" id="kw"/></span>
+			<!--<input type="button" id="submit" value="锑度一下" onclick="onc()"/>-->
+			<button onclick="onc()" id="submit">锑度一下</button>
+		</div>
+		<div id="footer">
+			<p>
+				<a id="seth" onclick="hp()" href="/">把锑度设为主页</a>
+				<a href="http://home.baidu.com">关于锑度</a>
+				<a href="http://ir.baidu.com">About Baidu</a>
+			</p>
+			<p class="foot">&copy; 2015 Baidu <a class="foot" href="http://www.baidu.com/duty">使用锑度前必读</a>
+			<a class="foot" href="http://jianyi.baidu.com/">意见反馈</a> 京ICP证030173号<!--这个有个 IRC 符号，但是我已经不想剪图了 <img src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_45de3f02.png "/>--><i class="c-icon-icrlogo" alt="然而我还是直接 cp 了"></i>
+			</p>
+		</div>
+	</div>
+</body>
+</html>
