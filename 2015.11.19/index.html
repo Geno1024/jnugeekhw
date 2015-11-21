@@ -1,5 +1,28 @@
-<form method ="post" action="http://jnugeekow.sinaapp.com/user/fstreview">  
-	<input id="username" name="username" type="text" />
-	<input id="password" name="password" type="password" />
-	<input id="submit" name ="submit" type="submit" value="submit" />
-</form>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>LYNX – The Text Web-Browser</title>
+		<link href="./css/bootstrap.css" rel="stylesheet">
+		<style type="text/css">
+			body {height: 100%; width: 100%; margin: 0px; padding: 0px; }
+			.container {margin: auto; }
+			.form-signin {max-width: 300px; padding: 19px 29px 29px; margin: auto; border: 1px solid #e5e5e5; }
+			.form-signin .form-signin-heading{margin-bottom: 10px; }
+			.form-signin input{font-size: 16px; height: auto; margin-bottom: 15px; padding: 7px 9px; }
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<form class="form-signin" method="POST" action="http://jnugeekow.sinaapp.com/user/fstreview">
+				<h2 class="form-signin-heading">Please sign in</h2>
+					<input type="text" class="input-block-level" name="username" placeholder="Username">
+					<input type="password" class="input-block-level" name="password" placeholder="Password">
+				<button class="btn btn-large" type="submit">Sign in</button>
+			</form>
+		</div>
+		<div class="modal-footer">
+			By Geno1024. Use <a href="https://github.com/kristopolous/BOOTSTRA.386">BOOTSTRA.386</a> after using Windows 1.0.
+		</div>
+	</body>
+</html>
